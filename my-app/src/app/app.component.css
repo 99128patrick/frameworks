@@ -7,11 +7,29 @@ justify-content: center;
 flex-direction: column;
 }
 
-.img{
-    width: 100px;
-    height: 100px;
+.img {
+    width: 3
+    300px;
+    height: 300px;
 }
 
+.calc input {
+   display: flex;
+   justify-content: center; 
+   align-items: center;
+
+}
+ .calc input {
+    width: 35px;
+    min-height: 30px;
+    margin: 8px;
+    outline: none;
+    background-color: #da7eb6;
+    font-size: 18px ; 
+
+}
+
+     
 
 
 
