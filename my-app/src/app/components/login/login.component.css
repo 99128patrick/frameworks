@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Alkatra:wght@400;500;600;700&family=Gochi+Hand&display=swap');
+
+* {
+    font-family: 'Acme', sans-serif;
+font-family: 'Alkatra', cursive;
+font-family: 'Gochi Hand', cursive;
+}
+
+.container {
+    background: #290bd1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+
+.login {
+    background: #fff;
+    width: 450px;
+    height: 450px;
+    border-radius: 20px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 50px 10px rgba(160, 62, 119, 0.82); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input {
+    box-shadow: 10px 10px 10px 5px rgb(182, 55, 114);  
+    width: 350px;
+    height: 25px;
+    border-radius: 5px;
+    margin: 20px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+.input input{
+    width: 280px;
+    height: 12px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    margin-bottom: 5px;
+}
+i {
+    font-size: 30px;
+    color: rgba(224, 25, 141, 0.82)
+}
+.remember {
+    display: flex;
+    align-items: center;
+    width: 370px;
+    justify-content: space-between;
+}
+
+.remember > div {
+    display: flex;
+    gap: 5px;
+}
+h3 {
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+ h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #b135b1;
+ }
+button {
+    width: 80px;
+    height: 40px;
+    margin: 30px;
+    border-radius: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.733), #000000, #000000);
+    box-shadow:  5px 5px 5px #9334a07c;
+    border: 0;
+    color: #fffffffd;
+
+}
+
+
+
+
+
+
+
+
