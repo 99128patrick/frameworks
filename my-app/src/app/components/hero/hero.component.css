@@ -40,5 +40,42 @@ margin: 10px;
     width: 80px;
 }
 
+.container .heroes{
+    padding: 30px;
+    font-size: 20px;
+    width: 100px;
+
+}
+
+.container .heroes ul li {
+    list-style: none;
+    border: solid rgb(232, 175, 175);
+    padding: 10px;
+    margin: 5px;
+    transition: background 500ms;
+
+}
+
+.container .heroes ul li:hover {
+ background: rgb(243, 153, 228);   
+}
+
+.container .card-hero {
+
+    background: rgb(212, 132, 199);
+    width: 400px;
+    height: 25px;
+    margin-left: 35px;
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid black;
+
+
+}
+ .container .card-hero .photo {
+     height: 10px;
+
+ }
+
 
 
