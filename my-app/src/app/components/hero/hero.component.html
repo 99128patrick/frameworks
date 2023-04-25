@@ -1,16 +1,12 @@
-<div class="container">
-    <div class="header">
-        <label for="hero-name">Digite o nome dp heroi</label>
-        <input type="text" name="hero-name" />
-        <button>Add Hero</button>
-    </div>
-<div class="content">-
-<ul>
-    <li *ngFor="let n of numeros">{{ n }}</li>
-   </ul>
 
-   <ul>
-    <li *ngFor="let h of herois">{{ h }}</li>
-   </ul>
- </div>
+
+  <div class="conteiner">
+    <div class="header">
+        <label for="lbhero"> digite o nome do seu heroi</label>
+<input type="text" name="txtHero" id="">
+<button> add hero</button>
+    </div>
+    <ul> <li *ngFor=" let v of heros"> {{ hero }}</li></ul>
+    <h2>{{hero.nome}}</h2>
+
 </div>

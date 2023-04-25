@@ -1,81 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Alkatra', cursive;
+.conteiner{
+    background: rgb(164, 223, 223);
+    height: 200px;
+    border-radius: 25%%;
 }
 
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column ;
-    width: 100% ;
-    height: 100vh ;
-    background-color: #0a030a;
-    color: #fff;
+.conteiner .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
-
-.container .header {
-    padding: 30px;
-    background: #60398d;
-    width: 100%;
-}
-
-.container .header label {
-font-size: 18px;
-margin: 10px;
-}
-
-.container .header input {
-    background: #0a030a(0, 0, 0.218);
-    height: 30px;
-    width: 240px;
-    font-size: 18px;
-    color:#ffffff
-}
-
-.container .header button {
-    height: 30px;
-    width: 80px;
-}
-
-.container .heroes{
-    padding: 30px;
-    font-size: 20px;
-    width: 100px;
-
-}
-
-.container .heroes ul li {
-    list-style: none;
-    border: solid rgb(232, 175, 175);
-    padding: 10px;
-    margin: 5px;
-    transition: background 500ms;
-
-}
-
-.container .heroes ul li:hover {
- background: rgb(243, 153, 228);   
-}
-
-.container .card-hero {
-
-    background: rgb(212, 132, 199);
-    width: 400px;
-    height: 25px;
-    margin-left: 35px;
-    border-radius: 15px;
-    padding: 10px;
-    border: 1px solid black;
-
-
-}
- .container .card-hero .photo {
-     height: 10px;
-
- }
-
-
-
