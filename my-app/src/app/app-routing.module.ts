@@ -3,18 +3,20 @@ import { RouterModule, Routes } from '@angular/router';
 import { CreateUserComponent } from './components/create-user/create-user.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { LoginComponent } from './components/login/login.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 
 const routes: Routes = [
 
   
-    {path: 'login', Component: LoginComponent},
-    {path:'heros', Component: HeroComponent},
-    {path: 'dashboard', Component: DashboardComponent},
+    {path: 'login', component: LoginComponent},
+    {path:'heros', component: HeroComponent},
+    {path:'dashboard', component: DashboardComponent},
     
 
-    {path: '', redirectTo: '/login', pathMath: 'full'},
-    {path: '**', Component: PageNotFoundComponent},
+    {path: '', redirectTo: '/login', pathMatch: 'full'},
+    {path: '**', component: PageNotFoundComponent},
 ];
     
     

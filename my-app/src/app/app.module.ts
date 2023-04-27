@@ -8,6 +8,8 @@ import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { CreateUserComponent } from './components/create-user/create-user.component';
+import { ComponetComponent } from './componet/componet.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { CreateUserComponent } from './components/create-user/create-user.compon
     HeroComponent,
     LoginComponent,
     PageNotFoundComponent,
-    CreateUserComponent
+    CreateUserComponent,
+    ComponetComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
