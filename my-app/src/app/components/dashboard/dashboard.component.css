@@ -1,16 +1,22 @@
+:root {
+    --bg-menu: #5a9cd6;
+
+    --shadow: #696969;
+}
+
+
 .container {
-    width: 80%;
+    margin: 20px;
+    width: 90%;
     height: 100vh;
     display: grid;
-    grid-template-columns: 300px 1fr;
-    box-shadow: 3px 3px 15px rgb(0, 0, 0);
+    grid-template-columns: 200px 1fr 350px;
+    box-shadow: 0 0 15px #696969;
+    border-radius: 10px;
 
 }
 
-.content {
-    
-    border: 1px solid rgb(0, 0, 0);
-}
+
 
 .user-info {
     display: grid;
@@ -18,8 +24,6 @@
 }
 
 .profile {
-    background: rgb(255, 0, 234);
-
     display: grid;
     grid-template-rows: auto auto;
     justify-content: center;
@@ -32,18 +36,10 @@
       height: 80px;
       background-color: rgb(162, 0, 255);
       border-radius: 50%;
-
-}
-.member {
-    background: rgba(152, 0, 253, 0.829);
 }
 
-.menu {
-    background-color: rgb(50, 124, 153);
-}
-
-.user-info .menu {
-    background: rgb(38, 0, 255);
+.user-info .menu ul {
+    padding: 5px;
 }
 
 .user-info .menu li {
@@ -52,13 +48,13 @@
 }
 
 .user-info .menu li i {
-    color: rgb(235, 235, 235);
+    color:  var(--shadow);
     font-size:  16px; 
     margin-right:  15px; 
 }
 
 .user-info .menu li a {
-    color: rgb(255, 255, 255);
+    color: var(--shadow);
     font-size:  16px; 
     text-decoration: none; 
 
@@ -66,22 +62,50 @@
 
 .content {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    /* background: white; */
+    grid-template-rows: 100px 200px 1fr;
+    padding: 40px;
 }
 
 
-.content .box-1 {
-   display: grid;
+.user, .user-info {
+    background: #f7f8fa;
 }
 
-.content .box-2 {
-    background: rgb(0, 26, 255);
+
+.content .search {
+    display: grid;
+    grid-template-columns: 150px auto;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.content .box-3 {
-    background: rgb(140, 0, 255);
+.content .search .input {
+    background: #f1f8ff ;
+    display: flex;
+    height: 40px;
+    width: 300px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
 }
-.content .box-4 {
-    background: rgb(255, 0, 128);
+
+.content .search .input input {
+    background: transparent;
+    border: none;
+    margin-left:15px;
+    height: 30px;
+    width: 160px;
+    outline: none;
+}   
+
+.content .search .input .icon {
+    height: 100%;
+    width: 35px;
+    color: #fff;
+    font-size: 24px;
+    background: #6555e2;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
 }
