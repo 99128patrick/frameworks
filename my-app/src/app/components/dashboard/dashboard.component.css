@@ -1,9 +1,15 @@
 :root {
-    --bg-menu: #5a9cd6;
-
+    --bg-menu: #e2e9ef;
     --shadow: #696969;
 }
 
+h3{
+    font-size: 14px;
+}
+
+h5 {
+    font-size: 10px;
+}
 
 .container {
     margin: 20px auto;
@@ -11,53 +17,53 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 200px 1fr 350px;
-    box-shadow: 0 0 15px #696969;
+    box-shadow: 3px 3px 15px #696969;
     border-radius: 10px;
-
 }
-
-
 
 .user-info {
     display: grid;
-    grid-template-rows: 150px 200px 1fr;
+    grid-template-rows: 150px 1fr;
 }
 
 .profile {
+    /* background: #a5a5eb; */
     display: grid;
     grid-template-rows: auto auto;
     justify-content: center;
-    justify-items: center;
     padding: 10px;
+    justify-items: center;
 }
 
 .profile .img {
-      width: 80px;
-      height: 80px;
-      background-color: rgb(162, 0, 255);
-      border-radius: 50%;
-}
-
-.user-info .menu ul {
-    padding: 5px;
+    width: 80px;
+    height: 80px;
+    background: #f1eca9;
+    border-radius: 50%;
 }
 
 .user-info .menu li {
     list-style: none;
-    padding: 5px 20px;
+    padding: 15px 20px;
+
 }
 
 .user-info .menu li i {
-    color:  var(--shadow);
-    font-size:  16px; 
-    margin-right:  15px; 
+    color: #696969;
+    font-size: 15px;
+    margin-right: 15px;
 }
 
 .user-info .menu li a {
-    color: var(--shadow);
-    font-size:  16px; 
-    text-decoration: none; 
+    color: #696969;
+    font-size: 15px;
+    text-decoration: none;
+}
 
+.user,
+.user-info {
+    background: #f7f8fa;
+    margin: 5px;
 }
 
 .content {
@@ -65,12 +71,6 @@
     grid-template-rows: 100px 200px 1fr;
     padding: 40px;
 }
-
-
-.user, .user-info {
-    background: #f7f8fa;
-}
-
 
 .content .search {
     display: grid;
@@ -80,7 +80,7 @@
 }
 
 .content .search .input {
-    background: #f1f8ff ;
+    background: #f1f8ff;
     display: flex;
     height: 40px;
     width: 300px;
@@ -92,28 +92,23 @@
 .content .search .input input {
     background: transparent;
     border: none;
-    margin-left:15px;
+    margin-left: 15px;
     height: 30px;
     width: 160px;
     outline: none;
-}   
-
-.content .search .input .icon {
-    height: 100%;
-    width: 35px;
-    color: #fff;
-    font-size: 24px;
-    background: #6555e2;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-
 }
 
-.user,
-.user-info {
-    background: #f1f8ff;
-    border-radius: 5px;
+.content .search .input .icon {
+    background: #6555e2;
+    color: #fff;
+    font-size: 24px;
+    width: 50px;
+    height: 38px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .content .info {
@@ -123,13 +118,12 @@
 }
 
 .content .info .box1 {
-    background: #fadbba;
+    background: #fadbbd;
 }
 
 .content .info .box2 {
-    background:#f0ecfe ;
+    background: #f0ecfe;
 }
-
 
 .content .adm {
     display: grid;
@@ -138,66 +132,76 @@
     margin-top: 30px;
 }
 
-.content .adm .task {
-    background: rgb(28, 180, 173);
-}
-
 .content .adm .team {
-    background: rgba(124, 54, 118, 0.205);
-
+    background: #d480bb;
 }
+
+.content .adm .task {
+    background: #cfbdfa;
+}
+
 .content .adm .team .title {
-    background: rgba(54, 124, 97, 0.205);
+    background: #e5f7f0;
     display: flex;
     align-items: center;
     height: 50px;
     border-radius: 5px;
-    
 }
 
 .content .adm .team .title span {
-   font-size: 18px;
-   font-weight: 600;
-    
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .content .adm .team .title .ball {
-    background: black;
-    border-radius: 50%;
+    background: #43af74;
     width: 30px;
     height: 30px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin:0 15px 0 25px ;
-
-    
+    margin: 0 15px 0 25px;
 }
-.content .adm .team .title .ball  i {
+
+.content .adm .team .title .ball i {
     color: #fff;
     font-size: 22px;
 }
 
+.container .user {
+    display: grid;
+    grid-template-rows: 100px 180px 120px 1fr;
+    gap: 10px;
+}
 
+.container .user .box-1 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 5px;
+}
 
+.container .user .box-1 i {
+    font-size: 25px;
+    margin: 0 10px;
+    color: #696969;
+}
 
+.container .user .box-2 {
+    background: #5e86b1;
+    font-size: 100px;
+}
 
+.container .user .box-3 {
+    background: #c49e66;
+}
 
+.container .user .box-4 {
+    background: #6fc48a;
+}
 
+.container .user .box-2 img {
+    width: 90px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
