@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -6,25 +8,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+  constructor (private router:Router){}
   isError = false;
-  isSucess = false;
+  isCorrect= false;
 
   user = ""
   pwd = ""
 
-  login() {
-
-    console.log("user = " + this.user + "Password = " + this.pwd)
-    if (this.user == "psabrina260@gmail.com" && this.pwd == "sabrina28") {
-      console.log("login aprovado")
+  login(){
+    if(this.user == "patrick@user" && this.pwd == "2005"){
+      this.isCorrect = true;
       this.isError = false;
-      this.isSucess = true;
+      this.router.navigate(['/dashboard']);
     }
-    else {
+    else{
       this.isError = true;
-      this.isSucess = false;
-    }
+      this.isCorrect = false;
 
+    } // user == "patrick@patrick" pwd= "patrick"
+
+    console.log("User = " + this.user + "Password = " + this.pwd)
   }
 }
-

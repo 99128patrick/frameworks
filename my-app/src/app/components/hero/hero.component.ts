@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Hero } from 'src/app/hero';
 
 @Component({
   selector: 'app-hero',
@@ -7,15 +6,8 @@ import { Hero } from 'src/app/hero';
   styleUrls: ['./hero.component.css']
 })
 export class HeroComponent {
-vetor = [
-  1,2,3,4,5
-]
 
-heros = [ "Homem-de-Ferro", "Viuva-Negra", "Homem-Formiga", "Pantera-Negra"
-  
-]
-hero: Hero = {
-  id:1,
-  nome: "Viuva-Negra"
-}
+  numeros = [ 5, 10, 15, 20, 25 ]
+  heroes = ['capitao america', 'homem de ferro', 'homem formiga']
+
 }
