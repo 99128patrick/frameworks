@@ -10,6 +10,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { CreateUserComponent } from './components/create-user/create-user.component';
 import { ComponetComponent } from './componet/componet.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { TaskComponent } from './components/task/task.component';
+import { UserComponent } from './components/user/user.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     PageNotFoundComponent,
     CreateUserComponent,
     ComponetComponent,
-    DashboardComponent
+    DashboardComponent,
+    TaskComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,

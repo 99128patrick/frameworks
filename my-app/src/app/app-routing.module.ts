@@ -14,6 +14,8 @@ const routes: Routes = [
     {path:'heros', component: HeroComponent},
     {path:'dashboard', component: DashboardComponent},
     
+    
+    
 
     {path: '', redirectTo: '/login', pathMatch: 'full'},
     {path: '**', component: PageNotFoundComponent},
