@@ -5,7 +5,7 @@ import { HeroComponent } from './components/hero/hero.component';
 import { LoginComponent } from './components/login/login.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-
+import { TaskComponent } from './components/task/task.component';
 
 const routes: Routes = [
 
@@ -13,6 +13,7 @@ const routes: Routes = [
     {path: 'login', component: LoginComponent},
     {path:'heros', component: HeroComponent},
     {path:'dashboard', component: DashboardComponent},
+    {path:'task', component: TaskComponent},
     
     
     
