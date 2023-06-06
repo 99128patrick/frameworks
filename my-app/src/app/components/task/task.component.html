@@ -1,18 +1,31 @@
 <div class="container">
+    
 <div class="task">
-    <h2>Formulario</h2>
-    <form>
+    <h2>Formulário</h2>
+    <div class="item">
 
-    Nome da task: <input type="text" name="nomedatask" id="nomedatask" placeholder="nomedatask">
-    <br>
-    Descriacao da task: <input type="text" name="nomedatask" id="nomedatask" placeholder="nomedatask">
-    <br>
-    Responsavel da task: <input type="text" name="nomedatask" id="nomedatask" placeholder="nomedatask">
-    <br>
-    Data de termino: <input type="Date" name="nomedatask" id="nomedatask" placeholder="nomedatask">
-    <br>
-    Data da criacao: <input type="Date" name="nomedatask" id="nomedatask" placeholder="nomedatask">
-    </form>
+            <label for="nomedatask"> Nome da task:</label>
+            <input type="text" name="nomedatask" id="nomedatask" placeholder="nomedatask"
+            [formControl]="task" />
+            
+            <label for="nomedatask">Descriacao da task:</label>
+            <input type="text" name="nomedatask" id="nomedatask" placeholder="nomedatask"
+            [formControl]="descricao" />
+
+            <label for="nommedatask">Responsavel da task:</label>
+            <input type="text" name="nomedatask" id="nomedatask" placeholder="nomedatask"
+            [formControl]="responsavel" />
+
+            <label for="">Data de termino:</label>
+            <input type="Date" name="nomedatask" id="nomedatask" placeholder="nomedatask"
+            [formControl]="dt_inicio" />
+
+            <label for="">Data da criacao:</label>
+            <input type="Date" name="nomedatask" id="nomedatask" placeholder="nomedatask"
+            [formControl]="dt_fim" />
+        
+
+    </div>
     <div class="button">
         <button>Cancelar</button>
         <button>Cadastrar</button>

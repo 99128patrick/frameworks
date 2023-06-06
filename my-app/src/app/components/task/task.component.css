@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-  }
+}
 
 .container {
     background: #2595b8;
@@ -24,6 +24,7 @@
     background: white;
     flex-direction: column; 
     border-radius: 10px;
+    
 }
 
 .button button {
@@ -36,4 +37,14 @@ color: rgb(27, 27, 27);
 margin: 10px;
 padding: 5px;
 background: rgb(36, 165, 216);
+}
+
+input {
+    margin: 8px;
+
+}
+
+.container .task .item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
