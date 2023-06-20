@@ -6,7 +6,7 @@
 
             <label for="nomedatask"> Nome da task:</label>
             <input type="text" name="nomedatask" id="nomedatask" placeholder="nomedatask"
-            [formControl]="task" />
+            [formControl]="nome" />
             
             <label for="nomedatask">Descriacao da task:</label>
             <input type="text" name="nomedatask" id="nomedatask" placeholder="nomedatask"
@@ -28,7 +28,7 @@
     </div>
     <div class="button">
         <button>Cancelar</button>
-        <button>Cadastrar</button>
+        <button (click)="addTask()">Cadastrar</button>
     </div>
 
 
