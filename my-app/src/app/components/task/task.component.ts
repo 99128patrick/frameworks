@@ -1,5 +1,7 @@
+import { TaskService } from './../task.service';
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Task } from 'src/app/model/task';
 
 @Component({
@@ -18,11 +20,17 @@ dt_fim = new FormControl ('')
 
 tasks: Task[] = [];
 
+constructor(private router: Router, private TaskService: TaskService){}
+
+
+
 addTask() {
+
   let t = this.dataToObject();
-  this.tasks.push(t);
+  this.TaskService.tasks.push(t);
   console.log(t);
-  this.limparForm();
+  this.limpar();
+  this.router.navigateByUrl('/dashboard');
 }
 
 dataToObject() {
@@ -30,17 +38,19 @@ dataToObject() {
   task.nome = this.nome.value!;
   task.descricao = this.descricao.value!;
   task.responsavel = this.responsavel.value!;
-  task.dt_inicio = Number(this.dt_inicio.value)!;
-  task.dt_fim = Number(this.dt_fim.value)!;
+  task.dt_inicio = new Date(this.dt_inicio.value!);
+  task.dt_fim = new Date(this.dt_fim.value!);
 
   return task;
   }
-  limparForm(){
+  limpar() {
+    //limpar as caixas de texto
     this.nome.setValue('');
     this.descricao.setValue('');
     this.responsavel.setValue('');
     this.dt_inicio.setValue('');
     this.dt_fim.setValue('');
+  
   }
 }
 

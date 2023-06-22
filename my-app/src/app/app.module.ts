@@ -12,6 +12,7 @@ import { ComponetComponent } from './componet/componet.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { TaskComponent } from './components/task/task.component';
 import { UserComponent } from './components/user/user.component';
+import { TaskService } from './components/task.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { UserComponent } from './components/user/user.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [TaskService],
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
